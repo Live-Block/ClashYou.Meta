@@ -38,7 +38,7 @@ subprojects {
             }
 
             minSdk = 21
-            targetSdk = 31
+            targetSdk = 34
 
             versionName = "2.10.1"
             versionCode = 210001
@@ -108,7 +108,7 @@ subprojects {
             }
         }
 
-        signingConfigs {
+       <!-- signingConfigs {
             val keystore = rootProject.file("signing.properties")
             if (keystore.exists()) {
                 create("release") {
@@ -123,6 +123,7 @@ subprojects {
                 }
             }
         }
+        -->
 
         buildTypes {
             named("release") {

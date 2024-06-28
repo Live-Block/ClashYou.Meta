@@ -12,9 +12,10 @@
     <dimen name="surface_landscape_min_width">500dp</dimen>
 
     <!--  Toolbar  -->
-    <dimen name="toolbar_height">56dp</dimen>
-    <dimen name="toolbar_elevation">5dp</dimen>
-    <dimen name="toolbar_image_action_padding">5dp</dimen>
+    <dimen name="toolbar_height">155dp</dimen>
+    <dimen name="toolbar_elevation">0dp</dimen>
+    <dimen name="toolbar_image_action_padding">1dp</dimen>
+    <dimen name="toolbar_padding_horizontal">23dp</dimen>
 
     <!--  Tab Layout  -->
     <dimen name="tab_layout_height">48dp</dimen>

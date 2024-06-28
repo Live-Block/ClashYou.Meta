@@ -2,20 +2,31 @@
 <layout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="center_vertical"
-        android:minHeight="@dimen/item_min_height"
-        android:orientation="horizontal"
-        android:paddingVertical="@dimen/item_padding_vertical">
+           android:layout_height="wrap_content">
 
-        <View
-            android:id="@+id/icon_view"
-            android:layout_width="@dimen/item_header_component_size"
-            android:layout_height="@dimen/item_header_component_size"
-            android:layout_marginHorizontal="@dimen/item_header_margin" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+            <LinearLayout
+                android:background="?attr/colorSurface"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/click_able"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/item_padding_vertical"
+                android:paddingHorizontal="@dimen/item_header_margin">
+                <View
+                    android:id="@+id/icon_view"
+                    android:layout_width="@dimen/item_header_component_size"
+                    android:layout_height="@dimen/item_header_component_size"
+                    android:layout_marginEnd="@dimen/item_header_margin" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,6 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/item_text_margin"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
-        </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </layout>

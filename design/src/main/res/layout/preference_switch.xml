@@ -40,7 +40,7 @@
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
         </LinearLayout>
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
+        <com.google.android.material.materialswitch.MaterialSwitch
             android:id="@+id/switch_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
