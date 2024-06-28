@@ -108,7 +108,7 @@ subprojects {
             }
         }
 
-       <!-- signingConfigs {
+       <!--signingConfigs {
             val keystore = rootProject.file("signing.properties")
             if (keystore.exists()) {
                 create("release") {
@@ -122,8 +122,7 @@ subprojects {
                     keyPassword = prop.getProperty("key.password")!!
                 }
             }
-        }
-        -->
+       }-->
 
         buildTypes {
             named("release") {
